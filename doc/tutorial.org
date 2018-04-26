@@ -1,0 +1,119 @@
+* commands
++ C-l
+  Clear screen and redisplay all the text, moving the text around the cursor
+  to the center of the screen. If you press C-l again, this piece of text will
+  move to the top of the screen. Press C-l again, and it moves to the bottom.
+
++ M-a
+  move back to beginning of sentence
+
++ M-e
+  move forward to end of sentence
+
++ M-<
+  move to the beginning of the file
+
++ M->
+  Move to the end of the file
+
++ M-<DEL>
+  kill the word immediately before the cursor
+
++ M-d
+  kill the next word after the cursor
+
++ C-k
+  kill from the cursor position to end of line
+
++ M-k
+  kill to the end of the current sentence
+
++ C-y
+  The difference between "killing" and "deleting" is that "killed" text can
+  be reinserted (at any position), whereas "deleted" things cannot.
+  Reinsertion of killed text is called "yanking". The command for yanking is
+  C-y.
+
++ M-y
+  What do you do if you have some text you want to yank back, and then you kill
+  something else? C-y would yank the more recent kill. But the previous text is
+  not lost. You can get back to it using the *M-y* command. After you have done
+  *C-y* to get the most recent kill, typing *M-y* replaces that yanked text
+  with the previous kill. Typing M-y again and again brings in earlier and
+  earlier kills. When you have reached the text you are looking for, you do not
+  have to do anything to keep it. Just go on with your editing, leaving the
+  yanked text where it is.
+
++ C-/
+  If you make a change to the text, and then decide that it was a mistake,
+  you can undo the change with the undo command, C-/.
+  Normally, C-/ undoes the changes made by one command; if you repeat C-/
+  several times in a row, each repetition undoes one more command.
+
++ C-x C-b
+  Emacs stores each file's text inside an object called a "buffer".Finding a
+  file makes a new buffer inside Emacs. To see a list of the buffers that
+  currently exist, type C-x C-b.
+  ANY text you see in an Emacs window is always part of some buffer.
+
++ C-x b
+  When you have several buffers, only one of them is "current" at any time.
+  That buffer is the one you edit. If you want to edit another buffer, you
+  need to "switch" to it.
+
++ C-x s
+  asks you about each buffer which contains changes that you have not saved.
+  It asks you, for each such buffer, whether to save the buffer.
+
++ C-z
+  exit Emacs *temporarily* -- so that you can go back to the same Emacs
+  session afterward. In the most common shells, you can resume Emacs with
+  the "fg" command.
+
++ M-x repl s<Return>
+  the replace-string command
+
++ M-x recover-file<Return>
+  If the computer crashes, you can recover you auto-saved editing by finding
+  the file normally (the file you were editing, not the auto save file) and
+  type M-x recover-file <return>
+
+* ECHO AREA
+"echo area" is at the bottom of the screen.
+
+* MODE LINE
+The line immediately above the echo area is called the "mode line".
+
+Emacs has many different major modes. Some of them are meant for editing
+different languages and/or kinds of text, such as Lisp mode, Text mode, etc.
+At any time one and only one major mode is active, and its name can always be
+found in the mode line.
+
++ C-h m
+  To view documentation on your current major mode.
+
+Major modes are called major because there are also minor modes.
+Minor modes are not alternatives to the major modes, just minor modifications
+of them. Each minor mode can be turned on or off by itself, independent of
+all other minor modes, and independent of your major mode. So you can use no
+minor modes, or one minor mode, or any combination of serveral minor modes.
+
+* SEARCHING
++ C-s
+  forward search
+
++ C-r
+  reverse search
+
+* MULTIPLE FRAMES
+Emacs can also create multiple "frames". A frame is what we call one collection
+of windows, together with its menus, scroll bars, echo area, etc.
+
++ M-x make-frame <return>
+  see a new frame appear on your screen.
+
+You can do everything you did in the original frame in the new frame. There is
+nothing special about the first frame.
+
++ M-x delete-frame <Return>
+  This removes the selected frame.
