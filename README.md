@@ -1,2 +1,15 @@
 # emacs0
 My Deep Learning For Emacs
+
+
+## Test
+1. prepare a empty directory, e.g.
+   $ mkdir ~/emacs-exp
+   $ cd ~/emacs-exp
+
+2. clone
+   $ git clone https://github.com/aqing1987/emacs0.git .emacs.d
+
+3. start to run
+   $ env HOME=`pwd` emacs
+ 

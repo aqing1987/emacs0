@@ -1,0 +1,18 @@
+#+title: Debug
+#+options: ^:nil
+
+* change default init path
+The basic approach I use for this is to modify *$HOME*, by running:
+#+BEGIN_SRC sh
+env HOME=/path/to/dir emacs
+#+END_SRC
+
+You then use */path/to/dir/.emacs.d*
+
+check [[https://www.gnu.org/software/emacs/manual/html_node/emacs/General-Variables.html#General-Variables][emacs HOME]] for detail.
+
+#+BEGIN_QUOTE
+HOME
+    The location of your files in the directory tree; used for expansion of
+    file names starting with a tilde (~).
+#+END_QUOTE
