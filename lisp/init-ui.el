@@ -16,3 +16,6 @@
 
 ;; disable scroll bar
 (scroll-bar-mode -1)
+
+;; disable cursor blink
+(blink-cursor-mode -1)
