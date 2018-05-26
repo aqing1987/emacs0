@@ -14,3 +14,5 @@
 ;; change scratch message
 (setq-default initial-scratch-message ";; Happy Hacking!\n\n")
 
+;; disable scroll bar
+(scroll-bar-mode -1)
