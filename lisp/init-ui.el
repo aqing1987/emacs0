@@ -19,3 +19,7 @@
 
 ;; disable cursor blink
 (blink-cursor-mode -1)
+
+;; config theme
+(load-theme 'leuven t)
+
