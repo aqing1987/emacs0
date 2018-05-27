@@ -1,8 +1,9 @@
-# emacs0
+#+title:  emacs0 
+
 My Deep Learning For Emacs
 
 
-## Test
+* Test
 1. prepare a empty directory, e.g.
    $ mkdir ~/emacs-exp
    $ cd ~/emacs-exp
@@ -12,4 +13,3 @@ My Deep Learning For Emacs
 
 3. start to run
    $ env HOME=`pwd` emacs
- 
