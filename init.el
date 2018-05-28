@@ -7,5 +7,5 @@
 
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
 
-(require 'init-ui)
+(require 'init-defaults)
 (require 'init-packages)
