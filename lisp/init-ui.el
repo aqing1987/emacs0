@@ -20,11 +20,13 @@
 ;; change scratch message
 (setq-default initial-scratch-message ";; Happy Hacking\n\n")
 
+;; disable backup file
+(setq-default make-backup-files nil)
 
 ;;; change default font
 ;; check current font: (face-attribute 'default :font)
 (add-to-list 'default-frame-alist
-	     '(font . "Inconsolata-16"))
+	     '(font . "Inconsolata-14"))
 
 ;;; $
 (provide 'init-ui)
