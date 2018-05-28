@@ -1,0 +1,6 @@
+#+title: font install
+
+* for Ubuntu
+- create a folder called *.fonts* in your home directory
+- drop the font directory in there
+- run *fc-cache -f -v* (not sudo) in order to cache fonts

@@ -23,9 +23,8 @@
 
 ;;; change default font
 ;; check current font: (face-attribute 'default :font)
-;; download Inconsolata if not exist
 (add-to-list 'default-frame-alist
-	     '(font . "Inconsolata-18"))
+	     '(font . "Inconsolata-16"))
 
 ;;; $
 (provide 'init-ui)
