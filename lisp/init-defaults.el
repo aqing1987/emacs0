@@ -29,6 +29,10 @@
 ;; disable dialog box
 (setq use-dialog-box nil)
 
+;; adds a newline at the end of the buffer
+;; for fixing: "\ No newline at end of file" issue
+(setq require-final-newline t)
+
 ;; highlight brackets
 (show-paren-mode 1)
 
