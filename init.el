@@ -39,6 +39,7 @@
 (require 'setup-general)
 
 (require 'setup-helm)
+(require 'setup-helm-gtags)
 (require 'setup-org)
 (require 'setup-company)
 (require 'setup-fly)
