@@ -37,7 +37,12 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/custom"))
 
 (require 'setup-general)
-(require 'setup-elpa)
+
+(require 'setup-helm)
+(require 'setup-org)
+(require 'setup-company)
+(require 'setup-fly)
+(require 'setup-python)
 
 (require 'setup-cc-mode)
 
