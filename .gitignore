@@ -2,4 +2,5 @@ auto-save-list/
 *~
 *.elc
 elpa/archives/
+custom-set-variables.el
 

@@ -34,6 +34,7 @@
   :config
   (add-hook 'org-mode-hook 'org-bullets-mode))
 
+;; helm
 (use-package helm
   :ensure t
   :bind
@@ -43,6 +44,11 @@
   :config
   (helm-mode 1))
 
+;; company
+(use-package company
+  :ensure t
+  :config
+  (add-hook 'after-init-hook 'global-company-mode))
 
 ;;; $
 (provide 'init-packages)
