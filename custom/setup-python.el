@@ -1,11 +1,13 @@
 ;;; package --- summary:
+;; for python development
+
 ;;; commentary:
+;; sudo pip install flake8
 
 ;;; code:
 
 ;; elpy
 (use-package elpy
-  :ensure t
   :init
   (elpy-enable)
   :config
@@ -15,7 +17,6 @@
   )
 
 (use-package py-autopep8
-  :ensure t
   :config
   (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save))
 
