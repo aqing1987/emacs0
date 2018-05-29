@@ -6,4 +6,4 @@
 (add-hook 'c-mode-common-hook 'google-make-newline-indent)
 
 ;;; $
-(provide 'init-cc-mode)
+(provide 'setup-cc-mode)

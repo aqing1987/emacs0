@@ -1,4 +1,10 @@
+;;; package --- Summary
+;; change the default
 
+;;; commentary:
+;; N/A
+
+;;; code:
 ;; disable tool bar
 (tool-bar-mode -1)
 
@@ -48,4 +54,5 @@
 	     '(font . "Inconsolata-14"))
 
 ;;; $
-(provide 'init-defaults)
+(provide 'setup-general)
+;;; setup-general.el ends here
