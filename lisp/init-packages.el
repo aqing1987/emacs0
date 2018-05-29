@@ -1,3 +1,10 @@
+;;; package -- Summary
+;; used for init package and install all kinds of packages
+
+;;; Commentary:
+;; use proxy to download packages from melpa
+
+;;; code:
 
 ;;; set proxy
 (setq url-proxy-services
@@ -20,9 +27,7 @@
 
 (package-initialize)
 
-
-;;; do install packages
-
+;;; install & config packages
 ;; use-package
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
@@ -50,5 +55,13 @@
   :config
   (add-hook 'after-init-hook 'global-company-mode))
 
+;; flycheck
+(use-package flycheck
+  :ensure t
+  :init (global-flycheck-mode)
+  :config
+  (add-hook 'after-init-hook #'global-flycheck-mode))
+
 ;;; $
 (provide 'init-packages)
+;;; init-packages.el ends here
