@@ -20,6 +20,8 @@
 ;; config theme
 (load-theme 'leuven t)
 
+(electric-pair-mode 1)
+
 ;; disable startup screen
 (setq inhibit-startup-screen t)
 
