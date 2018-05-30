@@ -53,6 +53,8 @@
 (add-to-list 'default-frame-alist
 	     '(font . "Inconsolata-14"))
 
+(global-set-key (kbd "<f5>") 'revert-buffer)
+
 ;;; $
 (provide 'setup-general)
 ;;; setup-general.el ends here
