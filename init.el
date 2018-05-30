@@ -39,6 +39,7 @@
 (require 'setup-general)
 
 (require 'setup-whichkey)
+(require 'setup-sr-speedbar)
 (require 'setup-helm)
 (require 'setup-helm-gtags)
 (require 'setup-org)
