@@ -38,13 +38,13 @@
 
 (require 'setup-general)
 
+(require 'setup-whichkey)
 (require 'setup-helm)
 (require 'setup-helm-gtags)
 (require 'setup-org)
 (require 'setup-company)
 (require 'setup-fly)
 (require 'setup-python)
-
 (require 'setup-cc-mode)
 
 ;;; init.el ends here
