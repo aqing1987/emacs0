@@ -57,6 +57,9 @@
 
 (global-set-key (kbd "<f5>") 'revert-buffer)
 
+;; activate whitespace-mode to view all whitespace characters
+(global-set-key (kbd "C-c w") 'whitespace-mode)
+
 ;;; $
 (provide 'setup-general)
 ;;; setup-general.el ends here
