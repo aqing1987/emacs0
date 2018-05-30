@@ -6,9 +6,13 @@
 
 (use-package company
   :init
+  (global-company-mode 1)
   (setq company-minimum-prefix-length 2)
-  :config
-  (add-hook 'after-init-hook 'global-company-mode))
+  (delete 'company-semantic company-backends))
+
+(use-package company-c-headers
+  :init
+  (add-to-list 'company-backends 'company-c-headers))
 
 (provide 'setup-company)
 ;;; setup-company.el ends here
