@@ -49,4 +49,6 @@
 (require 'setup-python)
 (require 'setup-cc-mode)
 
+(require 'setup-personal)
+
 ;;; init.el ends here
