@@ -53,7 +53,7 @@
 ;;; change default font
 ;; check current font: (face-attribute 'default :font)
 (add-to-list 'default-frame-alist
-	     '(font . "Inconsolata-14"))
+	     '(font . "Inconsolata"))
 
 (global-set-key (kbd "<f5>") 'revert-buffer)
 

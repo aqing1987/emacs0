@@ -38,6 +38,7 @@
 
 (require 'setup-general)
 
+(require 'setup-ace-window)
 (require 'setup-whichkey)
 (require 'setup-sr-speedbar)
 (require 'setup-helm)
