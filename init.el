@@ -50,6 +50,7 @@
 (require 'setup-python)
 (require 'setup-cc-mode)
 (require 'setup-music)
+(require 'setup-web)
 
 (require 'setup-personal)
 
