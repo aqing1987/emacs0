@@ -8,5 +8,9 @@
   :config
   (add-hook 'org-mode-hook 'org-bullets-mode))
 
+(use-package org-download
+  :config
+  (setq-default org-download-image-dir "~/orgfiles/img"))
+
 (provide 'setup-org)
 ;;; setup-org.el ends here
