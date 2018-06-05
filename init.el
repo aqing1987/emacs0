@@ -49,6 +49,7 @@
 (require 'setup-fly)
 (require 'setup-python)
 (require 'setup-cc-mode)
+(require 'setup-music)
 
 (require 'setup-personal)
 
