@@ -52,10 +52,7 @@
 ;; highlight current line
 (global-hl-line-mode 1)
 
-;;; change default font
-;; check current font: (face-attribute 'default :font)
-(add-to-list 'default-frame-alist
-	     '(font . "Inconsolata"))
+(add-to-list 'default-frame-alist '(width . 80))
 
 (global-set-key (kbd "<f5>") 'revert-buffer)
 
