@@ -3,6 +3,17 @@
 ;;; commentary:
 ;;; code:
 
+(require 'org)
+
+;; disalb postamble
+(setq org-html-postamble nil)
+
+;; preserve line breaks when export
+(setq org-export-preserve-breaks t)
+
+;; set the table of contents level limit
+(setq org-export-with-toc 2)
+
 ;; org-bullets
 (use-package org-bullets
   :config
