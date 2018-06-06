@@ -41,8 +41,6 @@
 ;; for fixing: "\ No newline at end of file" issue
 (setq require-final-newline t)
 
-(setq column-number-mode t)
-
 ;; highlight brackets
 (show-paren-mode 1)
 

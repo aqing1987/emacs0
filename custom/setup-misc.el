@@ -15,5 +15,12 @@
   (setq super-save-auto-save-when-idle t)
   (setq auto-save-default nil))
 
+(use-package fill-column-indicator
+  :config
+  (setq whitespace-style '(face trailing)))
+
+(define-global-minor-mode my-global-fci-mode fci-mode turn-on-fci-mode)
+(my-global-fci-mode 1)
+
 (provide 'setup-misc)
 ;;; setup-misc.el ends here
