@@ -48,6 +48,7 @@
 (require 'setup-org)
 (require 'setup-company)
 (require 'setup-fly)
+(require 'setup-yasnippet)
 (require 'setup-python)
 (require 'setup-cc-mode)
 (require 'setup-music)
