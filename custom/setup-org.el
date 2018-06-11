@@ -44,6 +44,7 @@
 \\usepackage{fontspec}
 \\usepackage{xcolor}
 \\usepackage{graphicx}
+\\usepackage{grffile}
 \\usepackage{bookmark}
 \\defaultfontfeatures{Mapping=tex-text}
 \\setromanfont{Gentium}
@@ -56,7 +57,6 @@
             marginparsep=7pt, marginparwidth=.6in}
 \\pagestyle{empty}
 \\hypersetup{colorlinks=true, linkcolor=blue}
-\\author{Neil Chen}
 \\title{}
       [NO-DEFAULT-PACKAGES]
       [NO-PACKAGES]"
@@ -75,6 +75,12 @@
 
 (setq org-latex-with-hyperref nil)
 (setq org-latex-toc-command "\\tableofcontents\n\n\\newpage")
+
+(setq org-latex-default-figure-position nil)
+(setq org-latex-tables-centered nil)
+;;(setq org-image-actual-width nil)
+;;(setq org-latex-image-default-width "250")
+;;(setq org-latex-image-default-height "160")
 
 (provide 'setup-org)
 ;;; setup-org.el ends here
