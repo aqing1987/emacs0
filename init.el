@@ -38,6 +38,7 @@
 
 (require 'setup-general)
 
+(require 'setup-modeline)
 (require 'setup-fonts)
 (require 'setup-misc)
 (require 'setup-ace-window)
