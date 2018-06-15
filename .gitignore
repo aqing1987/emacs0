@@ -4,3 +4,4 @@ auto-save-list/
 *.pyc
 custom-set-variables.el
 bookmarks
+elpa/archives/

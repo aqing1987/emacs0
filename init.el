@@ -53,6 +53,7 @@
 (require 'setup-cc-mode)
 (require 'setup-music)
 (require 'setup-web)
+(require 'setup-git)
 
 (require 'setup-personal)
 
