@@ -57,6 +57,10 @@
 ;; activate whitespace-mode to view all whitespace characters
 (global-set-key (kbd "C-c w") 'whitespace-mode)
 
+;; keep a list of recently opened files
+(recentf-mode 1)
+(global-set-key (kbd "<f6>") 'recentf-open-files)
+
 ;;; $
 (provide 'setup-general)
 ;;; setup-general.el ends here
