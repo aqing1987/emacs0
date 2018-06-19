@@ -82,5 +82,10 @@
 ;;(setq org-latex-image-default-width "250")
 ;;(setq org-latex-image-default-height "160")
 
+(global-set-key (kbd "C-c a") 'org-agenda)
+(setq org-agenda-files (list "~/orgfiles/work.org"
+			     "~/orgfiles/i.org"
+			     "~/orgfiles/schedule.org"))
+
 (provide 'setup-org)
 ;;; setup-org.el ends here
