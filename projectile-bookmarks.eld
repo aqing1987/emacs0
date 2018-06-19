@@ -1,0 +1,1 @@
+("~/workspace/open-src/xs/s-app-layer/" "~/.emacs.d/")

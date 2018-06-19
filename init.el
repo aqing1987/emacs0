@@ -56,6 +56,7 @@
 (require 'setup-web)
 (require 'setup-git)
 (require 'setup-markdown)
+(require 'setup-projectile)
 
 (require 'setup-personal)
 
