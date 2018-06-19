@@ -55,6 +55,7 @@
 (require 'setup-music)
 (require 'setup-web)
 (require 'setup-git)
+(require 'setup-markdown)
 
 (require 'setup-personal)
 
