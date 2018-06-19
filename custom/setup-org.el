@@ -87,5 +87,7 @@
 			     "~/orgfiles/i.org"
 			     "~/orgfiles/schedule.org"))
 
+(use-package org-pomodoro)
+
 (provide 'setup-org)
 ;;; setup-org.el ends here
