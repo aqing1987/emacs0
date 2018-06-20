@@ -7,7 +7,7 @@
 (use-package company
   :config
   (setq company-idle-delay 0)  
-  (setq company-minimum-prefix-length 2)
+  (setq company-minimum-prefix-length 3)
   (delete 'company-semantic company-backends)
 
   (global-company-mode 1))
