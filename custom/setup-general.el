@@ -50,7 +50,17 @@
 ;; highlight current line
 (global-hl-line-mode 1)
 
-(add-to-list 'default-frame-alist '(width . 80))
+;; display-graphic-p check if emacs is running in graphical
+;; environment. (that is, not terminal), many settings related to
+;; windows size are not relevant if emacs is running in terminal.
+;; default-frame-alist is a variable that holds a alist of any new
+;; window.
+(if (display-graphic-p)
+    (progn
+      (setq default-frame-alist
+	    '((width . 80)
+	      (right . 50)
+	      (top . 50)))))
 
 (global-set-key (kbd "<f5>") 'revert-buffer)
 
