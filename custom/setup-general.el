@@ -26,7 +26,8 @@
 (setq inhibit-startup-screen t)
 
 ;; change scratch message
-(setq initial-scratch-message ";; Happy Hacking\n\n")
+;;(setq initial-scratch-message ";; Happy Hacking\n\n")
+(setq initial-scratch-message ";; α\n\n")
 
 ;; disable backup file
 (setq make-backup-files nil)
