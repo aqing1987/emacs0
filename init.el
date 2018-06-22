@@ -57,6 +57,7 @@
 (require 'setup-git)
 (require 'setup-markdown)
 (require 'setup-projectile)
+(require 'setup-csv)
 
 (require 'setup-personal)
 

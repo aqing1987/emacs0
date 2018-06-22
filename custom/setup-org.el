@@ -85,14 +85,6 @@
 	       ("\\paragraph{%s}" . "\\paragraph*{%s}")
 	       ("\\subparagraph{%s}" . "\\subparagraph*{%s}"))))
 
-;; ;; when export to latex, use minted, rather then listings
-;; (setq org-latex-listings 'minted)
-;; (add-to-list 'org-latex-packages-alist '("" "minted"))
-;; ;; add frame and line number for source code(using minted)
-;; (setq org-latex-minted-options
-;;       '(("frame" "single")
-;;         ("linenos" "true")))
-
 ;; format source code
 (setq org-latex-listings t)
 ;; Options for \lset command（reference to listing Manual)
@@ -121,6 +113,10 @@
         ("rulesepcolor" "\\color{comdil}")
 	))
 
+(setq org-latex-title-command
+      '("\\maketitle"
+	"\\colorbox{grey}
+\\"))
 
 ;;org-mode takes care of the export from its own format to LaTex,
 ;;but we need to tell it to use xelatex to process the LaTex to PDF

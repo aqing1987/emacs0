@@ -5,6 +5,7 @@ auto-save-list/
 custom-set-variables.el
 bookmarks
 elpa/archives/
+archive-contents
 irony/
 recentf
 *.eld
