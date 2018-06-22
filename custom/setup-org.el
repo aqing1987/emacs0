@@ -50,7 +50,7 @@
 \\setromanfont{Gentium}
 \\setromanfont [BoldFont={Gentium Basic Bold},
                 ItalicFont={Gentium Basic Italic}]{Gentium Basic}
-\\setsansfont{Charis SIL}
+\\setsansfont{DejaVu Sans}
 \\setmonofont[Scale=0.8]{DejaVu Sans Mono}
 \\usepackage{geometry}
 \\geometry{a4paper, textwidth=6.5in, textheight=10in,

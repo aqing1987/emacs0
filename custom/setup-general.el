@@ -60,7 +60,7 @@
     (progn
       (setq default-frame-alist
 	    '((width . 80)
-	      (right . 50)
+	      (left . 100)
 	      (top . 50)))))
 
 (global-set-key (kbd "<f5>") 'revert-buffer)
