@@ -42,19 +42,27 @@
 		 "\\documentclass[11pt,a4paper]{article}
 \\usepackage[utf8]{inputenc} % Required for inputting international characters
 \\usepackage[T1]{fontenc} % Output font encoding for international characters
-\\usepackage{fontspec}
+\\usepackage{textcomp}
 \\usepackage{xcolor} % Required for specifying custom colors
-\\definecolor{grey}{rgb}{0.9,0.9,0.9} % color of the box surrounding the title
-
 \\usepackage[sfdefault]{ClearSans} % Use the Clear Sans font (sans serif)
 \\usepackage{graphicx}
 \\usepackage{grffile}
 \\usepackage{bookmark}
-\\defaultfontfeatures{Mapping=tex-text}
+\\usepackage{fontspec}
+%\\defaultfontfeatures{Mapping=tex-text}
+\\setmainfont[
+  Ligatures=TeX,
+  BoldFont={Aboriginal Serif Bold},
+  ItalicFont={Aboriginal Serif Italic},
+  BoldItalicFont={Aboriginal Serif Bold Italic},
+  %SmallCapsFont={TeX Gyre Termes},
+  %SmallCapsFeatures={Letters=SmallCaps},
+  Mapping=tex-text,
+]{Doulos SIL}
 \\setromanfont{Gentium}
 \\setromanfont [BoldFont={Gentium Basic Bold},
                 ItalicFont={Gentium Basic Italic}]{Gentium Basic}
-\\setsansfont{DejaVu Sans}
+\\setsansfont[Mapping=tex-text]{DejaVu Sans}
 \\setmonofont[Scale=0.8]{DejaVu Sans Mono}
 \\usepackage{listings}
 \\usepackage{geometry}
@@ -62,20 +70,18 @@
             marginparsep=7pt, marginparwidth=.6in}
 \\pagestyle{empty}
 \\hypersetup{colorlinks=true, linkcolor=blue}
-\\definecolor{foreground}{RGB}{220,220,204}
-%\\definecolor{background}{RGB}{62,62,62}
-\\definecolor{background}{RGB}{105,105,105}
-\\definecolor{preprocess}{RGB}{250,187,249}
-\\definecolor{var}{RGB}{239,224,174}
-\\definecolor{string}{RGB}{154,150,230}
-\\definecolor{type}{RGB}{225,225,116}
-\\definecolor{function}{RGB}{140,206,211}
-\\definecolor{keyword}{RGB}{239,224,174}
-\\definecolor{comment}{RGB}{180,98,4}
-\\definecolor{doc}{RGB}{175,215,175}
+\\definecolor{background}{RGB}{245,255,245}
+\\definecolor{preprocess}{RGB}{91,62,84}
+\\definecolor{var}{RGB}{160,82,45}
+\\definecolor{type}{RGB}{34,139,34}
+\\definecolor{string}{RGB}{139,34,82}
+\\definecolor{function}{RGB}{0,0,255}
+\\definecolor{keyword}{RGB}{160,32,240}
+\\definecolor{comment}{RGB}{160,32,240}
+\\definecolor{doc}{RGB}{139,34,82}
+\\definecolor{constant}{RGB}{0,139,139}
+\\definecolor{buildin}{RGB}{72,61,139}
 \\definecolor{comdil}{RGB}{111,128,111}
-\\definecolor{constant}{RGB}{220,162,170}
-\\definecolor{buildin}{RGB}{127,159,127}
 \\title{}
       [NO-DEFAULT-PACKAGES]
       [NO-PACKAGES]"
@@ -90,28 +96,30 @@
 ;; Options for \lset command（reference to listing Manual)
 (setq org-latex-listings-options
       '(
-        ("basicstyle" "\\color{foreground}\\small")
+	("upquote" "true")
+	("basicstyle" "\\color{black}\\ttfamily\\small")
         ("keywordstyle" "\\color{function}\\bfseries\\small")
         ("identifierstyle" "\\color{doc}\\small")
         ("commentstyle" "\\color{comment}\\small\\itshape")
         ("stringstyle" "\\color{string}\\small")
         ("showstringspaces" "false")
-        ;;("backgroundcolor" "\\color{background}")
+        ("backgroundcolor" "\\color{background}")
         ("tabsize" "4")
         ("captionpos" "t")
         ("breaklines" "true")
         ("breakatwhitespace" "true")
         ("showspaces" "false")
         ("columns" "flexible")
-        ;;("frame" "single")
-	("frame" "shadowbox")
-        ("frameround" "tttt")
-        ("framesep" "0pt")
+        ("frame" "single")
+        ("frameround" "fttt")
+        ("framesep" "1pt")
         ("framerule" "3pt")
-        ("rulecolor" "\\color{background}")
+	("rulecolor" "\\color{black}")
         ("fillcolor" "\\color{white}")
         ("rulesepcolor" "\\color{comdil}")
 	))
+
+(setq org-export-with-smart-quotes t)
 
 ;; (setq org-latex-title-command
 ;;       '("\\maketitle"
