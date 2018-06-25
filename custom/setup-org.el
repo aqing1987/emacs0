@@ -113,10 +113,10 @@
         ("rulesepcolor" "\\color{comdil}")
 	))
 
-(setq org-latex-title-command
-      '("\\maketitle"
-	"\\colorbox{grey}
-\\"))
+;; (setq org-latex-title-command
+;;       '("\\maketitle"
+;; 	"\\colorbox{grey}
+;; \\"))
 
 ;;org-mode takes care of the export from its own format to LaTex,
 ;;but we need to tell it to use xelatex to process the LaTex to PDF
