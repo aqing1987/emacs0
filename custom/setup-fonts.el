@@ -7,7 +7,7 @@
 ;;; change default font
 ;; check current font: (face-attribute 'default :font)
 ;; DejaVu Sans Mono-12
-(add-to-list 'default-frame-alist '(font . "Inconsolata-14"))
+(add-to-list 'default-frame-alist '(font . "Inconsolata"))
 
 ;; font scaling
 (use-package default-text-scale
