@@ -58,6 +58,7 @@
 (require 'setup-markdown)
 (require 'setup-projectile)
 (require 'setup-csv)
+(require 'setup-sql)
 
 (require 'setup-personal)
 
