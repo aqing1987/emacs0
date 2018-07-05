@@ -12,6 +12,14 @@
 	("http" . "127.0.0.1:1080")
 	("https" . "127.0.0.1:1080")))
 
+(defmacro local-require (pkg)
+  "Load local PKG."
+  `(load (file-truename (format "~/.emacs.d/site-lisp/%s/%s", pkg, pkg))))
+
+(defmacro require-init (pkg)
+  "Load self init PKG."
+  `(load (file-truename (format "~/.emacs.d/custom/%s", pkg))))
+
 ;;; init package
 ;; use M-x package-list-packages
 ;; to browse and install packages from MELPA and elsewhere.
@@ -36,30 +44,35 @@
 ;;; load configurations
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/custom"))
 
-(require 'setup-general)
+(require-init 'setup-general)
 
-(require 'setup-modeline)
-(require 'setup-fonts)
-(require 'setup-misc)
-(require 'setup-ace-window)
-(require 'setup-whichkey)
-(require 'setup-sr-speedbar)
-(require 'setup-helm)
-(require 'setup-helm-gtags)
-(require 'setup-org)
-(require 'setup-company)
-(require 'setup-fly)
-(require 'setup-yasnippet)
-(require 'setup-python)
-(require 'setup-cc-mode)
-(require 'setup-music)
-(require 'setup-web)
-(require 'setup-git)
-(require 'setup-markdown)
-(require 'setup-projectile)
-(require 'setup-csv)
-(require 'setup-sql)
+(require-init 'setup-modeline)
+(require-init 'setup-fonts)
+(require-init 'setup-misc)
+(require-init 'setup-ace-window)
+(require-init 'setup-whichkey)
+(require-init 'setup-sr-speedbar)
+(require-init 'setup-helm)
+(require-init 'setup-helm-gtags)
+(require-init 'setup-org)
+(require-init 'setup-company)
+(require-init 'setup-fly)
+(require-init 'setup-yasnippet)
+(require-init 'setup-python)
+(require-init 'setup-cc-mode)
+(require-init 'setup-music)
+(require-init 'setup-web)
+(require-init 'setup-git)
+(require-init 'setup-markdown)
+(require-init 'setup-projectile)
+(require-init 'setup-csv)
 
-(require 'setup-personal)
+(require-init 'setup-personal)
+
+;; @see https://github.com/hlissner/doom-emacs/wiki/FAQ
+;; Adding directories under "~/.emacs.d/site-lisp/" to `load-path' slows
+;; down all `require' statement. So we do this at the end of startup
+;; Besides, no packages from ELPA is dependent "~/.emacs.d/site-lisp" now.
+(require-init 'setup-site-lisp)
 
 ;;; init.el ends here
