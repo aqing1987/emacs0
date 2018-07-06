@@ -59,6 +59,7 @@
 (require-init 'setup-fly)
 (require-init 'setup-yasnippet)
 (require-init 'setup-python)
+(require-init 'setup-parens)
 (require-init 'setup-cc-mode)
 (require-init 'setup-music)
 (require-init 'setup-web)

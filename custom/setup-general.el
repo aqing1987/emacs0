@@ -42,9 +42,6 @@
 ;; for fixing: "\ No newline at end of file" issue
 (setq require-final-newline t)
 
-;; highlight brackets
-(show-paren-mode 1)
-
 ;; use y/n, via symbol indirection process
 (fset 'yes-or-no-p 'y-or-n-p)
 
