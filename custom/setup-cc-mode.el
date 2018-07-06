@@ -21,5 +21,12 @@
   (global-set-key (kbd "C-c u") 'clang-format-buffer)
   )
 
-;;; setup-cc-mode.el ends here
+(global-set-key (kbd "<f5>")
+		(lambda ()
+		  (interactive)
+		  (call-interactively 'compile)))
+
+
 (provide 'setup-cc-mode)
+;;; setup-cc-mode.el ends here
+
