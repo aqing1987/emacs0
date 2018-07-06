@@ -21,10 +21,14 @@
   (global-set-key (kbd "C-c u") 'clang-format-buffer)
   )
 
+(use-package smart-compile
+  :config
+  (require 'smart-compile))
+
 (global-set-key (kbd "<f5>")
 		(lambda ()
 		  (interactive)
-		  (call-interactively 'compile)))
+		  (call-interactively 'smart-compile)))
 
 
 (provide 'setup-cc-mode)
