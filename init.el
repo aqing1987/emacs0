@@ -67,6 +67,7 @@
 (require-init 'setup-markdown)
 (require-init 'setup-projectile)
 (require-init 'setup-csv)
+(require-init 'setup-debug)
 
 (require-init 'setup-personal)
 

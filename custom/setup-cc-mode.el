@@ -3,7 +3,10 @@
 
 ;;; code:
 
+
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+
+(add-hook 'c-mode-common-hook 'hs-minor-mode)
 
 (use-package google-c-style
   :config
