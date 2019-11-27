@@ -5,6 +5,7 @@
 
 
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.c\\'" . c++-mode))
 
 (add-hook 'c-mode-common-hook 'hs-minor-mode)
 
@@ -33,6 +34,7 @@
 		  (interactive)
 		  (call-interactively 'smart-compile)))
 
+(use-package cmake-mode)
 
 (provide 'setup-cc-mode)
 ;;; setup-cc-mode.el ends here
